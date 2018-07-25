@@ -4,10 +4,7 @@ package com.tz.offor;
  * create by tz on 2018-07-24
  */
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * 题目描述
@@ -75,6 +72,10 @@ public class maxInWindows {
         int[] num = {2,3,4,2,6,2,5,1};
         int size = 3;
         ArrayList<Integer> list = maxInWindows2(num, size);
+        for (Integer a : list) {
+            System.out.print(a.intValue()+",");
+        }
+
 
     }
 
