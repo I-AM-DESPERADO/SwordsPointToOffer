@@ -5,8 +5,7 @@ package com.tz.SortTest;
  */
 public class QuickSort {
     private static int getMiddle(int[] num, int low, int high) {
-        //System.out.println("low = " + low);
-        //System.out.println("high = " + high);
+
         int temp = num[low];
         while (low < high) {
             while (low < high && num[high] > temp) {
