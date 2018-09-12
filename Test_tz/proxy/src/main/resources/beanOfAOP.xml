@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+    <!--被代理的目标对象-->
+    <bean id="math" class="com.tz.cglib.proxy.Math"/>
+
+    <bean id="advice" class="com.tz.cglib.springAOP2.Advice"/>
+
+    <aop:config proxy-target-class="true">
+        <aop:aspect ref="advice">
+            <aop:pointcut id="pointcunt1" expression="execution(* com.tz.cglib.proxy.Math.*(..))"/>
+            <aop:before method="before" pointcut-ref="pointcunt1"/>
+            <aop:after method="after" pointcut-ref="pointcunt1"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

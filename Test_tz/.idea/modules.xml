@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Test_tz/Test_tz.iml" filepath="$PROJECT_DIR$/../Test_tz/Test_tz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test_tz.iml" filepath="$PROJECT_DIR$/Test_tz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy/proxy.iml" filepath="$PROJECT_DIR$/proxy/proxy.iml" />
     </modules>
   </component>
 </project>
